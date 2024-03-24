@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'TacticSans-Med';
+    src: url('TacticSans-Med.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TacticSans-MedIt';
+    src: url('TacticSans-MedIt.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TacticSansExd-Med';
+    src: url('TacticSansExd-Med.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TacticSansExd-MedIt';
+    src: url('TacticSansExd-MedIt.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TacticSansExtExd-Med';
+    src: url('TacticSansExtExd-Med.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TacticSansExtExd-MedIt';
+    src: url('TacticSansExtExd-MedIt.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

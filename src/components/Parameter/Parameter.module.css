@@ -1,0 +1,23 @@
+.parameter {
+  display: flex;
+  flex-direction: row;
+  font-family: "TacticSans-Med", Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: white;
+  gap: 0.7rem;
+  align-items: center;
+}
+.parameter img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=Parameter.module.css.map */

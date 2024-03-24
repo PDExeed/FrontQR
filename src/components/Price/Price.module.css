@@ -1,0 +1,24 @@
+.container {
+  padding: 4rem;
+  letter-spacing: 0.2em;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #30363A;
+}
+
+.price {
+  margin-top: 3rem;
+  font-size: 2.7rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.priceNumber {
+  font-family: "TacticSansExtExd-Med";
+}
+
+/*# sourceMappingURL=Price.module.css.map */

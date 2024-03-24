@@ -1,0 +1,28 @@
+.table {
+  width: 100%;
+  height: 100%;
+  font-size: 1.7rem;
+  font-weight: 400;
+  flex-grow: 2;
+  table {
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+  td:first-child {
+    border-right: 1px solid black;
+  }
+
+  td {
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  td:first-child {
+    text-align: right; /* Выравнивание содержимого первой колонки по правому краю */
+  }
+
+  td:nth-child(2) {
+    text-align: left; /* Выравнивание содержимого второй колонки по левому краю */
+  }
+}

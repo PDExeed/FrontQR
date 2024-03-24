@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 0.5rem;
+  background-color: white;
+}
+.border {
+  margin: 1rem;
+  padding: 2rem;
+  background-size:  100% 100%;
+}
+.title {
+  display: none;
+}
+
+@media (max-width: 650px){
+  .border {
+    padding: 5px 5px;
+    margin: 10px 20px;
+  }
+  .title{
+    font-family: 'TacticSansExtExd-Med';
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
