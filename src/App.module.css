@@ -1,0 +1,37 @@
+.decriptionContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem 6rem;
+  align-items: center;
+  gap: 10rem;
+  justify-items: center;
+}
+
+.hiden {
+  display: none;
+  margin: 0;
+}
+
+.container img {
+  display: block;
+}
+
+@media (max-width: 570px) {
+  .decriptionContainer {
+    flex-direction: column;
+    margin: 3rem 0 0 0;
+    gap: 0;
+  }
+  .decriptionContainer img {
+    display: block;
+  }
+  .hiden {
+    display: block;
+    width: 100%;
+  }
+  .container {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=App.module.css.map */
