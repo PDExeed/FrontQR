@@ -1,6 +1,6 @@
 .background {
   background-size: cover;
-  background-position: left;
+  background-position: center;
   height: 92vh;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,21 @@
   justify-content: space-between;
 }
 
-@media (max-width: 570px) {
+.LX {
+  color: #C0C0C0;
+}
+.LX .title {
+  border-bottom: 1px solid #C0C0C0;
+}
+
+.RX {
+  color: #8E8181;
+}
+.RX .title {
+  border-bottom: 1px solid #8E8181;
+}
+
+@media (max-width: 700px) {
   .title {
     margin: auto;
   }

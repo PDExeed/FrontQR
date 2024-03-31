@@ -1,10 +1,25 @@
 .container {
-  background-color: #30363A;
   color: white;
   font-size: 2.4rem;
   font-weight: 400;
   text-align: center;
   padding: 3.5rem 13rem;
+}
+
+.VX {
+  background-color: #30363A;
+}
+
+.TXL {
+  background-color: #595E62;
+}
+
+.LX {
+  background-color: #A33131;
+}
+
+.RX {
+  background-color: #806978;
 }
 
 @media (max-width: 570px) {

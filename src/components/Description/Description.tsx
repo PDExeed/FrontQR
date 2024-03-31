@@ -1,8 +1,19 @@
 import s from './Description.module.css'
+import {useSelector} from "react-redux";
+import {RootState} from "../../store/store";
+import cn from "classnames";
+
 export function Description() {
-    return(
+    const data = useSelector((s: RootState) => s.car)
+    return (
         <div
-            className={s.container}>Новый EXEED VX - флагманский полноразмерный внедорожник с 6-ти или 7-ми местным салоном на выбор,
-            онлайн сервисами и возможностью дистанционного управления функциями автомобиля через приложение.</div>
+            className={cn(s.container, {
+                [s.VX]: data.model === 'VX',
+                [s.TXL]: data.model === 'TXL',
+                [s.LX]: data.model === 'LX',
+                [s.RX]: data.model === 'RX',
+            })}>
+            {data.description}
+        </div>
     )
 }

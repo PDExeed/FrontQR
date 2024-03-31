@@ -1,4 +1,4 @@
-.decriptionContainer {
+.descriptionContainer {
   display: flex;
   flex-direction: row;
   margin: 5rem 6rem;
@@ -15,8 +15,8 @@
     display: block;
   }
 }
-@media (max-width: 570px) {
-  .decriptionContainer {
+@media (max-width: 880px) {
+  .descriptionContainer {
     flex-direction: column;
     margin: 3rem 0 0 0;
     gap: 0;
