@@ -3,8 +3,10 @@ import {Parameter} from "../Parameter/Parameter";
 import {useSelector} from "react-redux";
 import {RootState} from "../../store/store";
 import cn from "classnames"
+import carInformation from "../../store/carInformationSlice";
 export function TitleInformation(){
-    const data = useSelector((s: RootState)=> s.car)
+    const data = useSelector((s: RootState)=> s.carInformation)
+    console.log(data)
     return(
         <div className={s.background} style={{backgroundImage: `url("${data.image}")`}}>
             <div className={cn({

@@ -8,15 +8,23 @@ import {BackgroundImage} from "./components/BackgroundImage/BackgroundImage";
 import {Cards} from "./components/Cards/Cards";
 import {Price} from "./components/Price/Price";
 import {Footer} from "./components/Footer/Footer";
-import {cartActions} from "./store/carSlice";
+import {cartActions} from "./store/carInformationSlice";
 import {useDispatch} from "react-redux";
 import {AppDispatch} from "./store/store";
+import {Accessories} from "./components/Accessories/Accessories";
+import {carAPI} from "./store/services/carSlice";
 
 function App() {
     const dispatch = useDispatch<AppDispatch>()
-    useEffect(()=>{
-        dispatch(cartActions.get(window.location.href.split('/')[3]))
-    }, [])
+    const {data, isLoading, error} = carAPI.useFetchCarQuery(window.location.href.split('/')[3])
+        useEffect(()=>{
+            if(data) {
+                dispatch(cartActions.get(data.model))
+                dispatch(cartActions.setCar(data))
+            }
+            dispatch(cartActions.get(window.location.href.split('/')[3]))
+            console.log(data)
+    }, [data, isLoading])
   return (
     <div>
         <Header/>
@@ -33,6 +41,7 @@ function App() {
         </div>
         <Cards/>
         <Price price={6700000}/>
+        <Accessories/>
         <Footer/>
     </div>
   );

@@ -18,3 +18,11 @@
 .priceNumber {
   font-family: 'TacticSansExtExd-Med';
 }
+@media screen and (max-width: 500px){
+  .text {
+    text-align: start;
+  }
+  .price {
+    text-align: start;
+  }
+}

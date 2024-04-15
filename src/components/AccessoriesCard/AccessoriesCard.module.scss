@@ -1,0 +1,50 @@
+.container {
+  text-decoration: none;
+  color: inherit;
+  height: 160px;
+  width: 120px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  border-radius: 3px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  border: 0.5px solid #171A1F47;
+  border-radius: 3px;
+  padding: 1rem;
+  margin: 1rem;
+}
+.title {
+  font-family: "TacticSans-Med";
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 3px;
+}
+.price {
+  font-family: 'TacticSansExtExd-Med';
+  font-size: 8.49px;
+  font-weight: normal;
+  line-height: 9.34px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #171A1F;
+}
+.arrowsRightUp {
+  background-image: url("../../../public/arrowsRightUp.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border-radius: 2px;
+}

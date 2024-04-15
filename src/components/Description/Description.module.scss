@@ -4,22 +4,31 @@
   font-weight: 400;
   text-align: center;
   padding: 3.5rem 13rem;
+  background: linear-gradient(360deg, #5A5963 -0.12%, #3A393F 100%);
+  display: flex;
+  justify-content: center;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .VX {
-  background-color: #30363A;
+  background: linear-gradient(360deg, #535A5C -0.12%, #262A2C 100%);
 }
 .TXL {
-  background-color: #595E62;
+  background: linear-gradient(360deg, #5A5963 -0.12%, #3A393F 100%);
 }
 .LX {
-  background-color: #A33131;
+  background: linear-gradient(360deg, #764755 -0.12%, #3C3437 100%);
 }
 .RX {
-  background-color: #806978;
+  background: linear-gradient(360deg, #907891 -0.12%, #3C2D39 100%);
 }
 @media (max-width: 570px) {
   .container {
-    padding: 20px;
+    padding: 3rem;
     font-size: 2.3rem;
+    width: calc(100vw - 10px);
   }
 }

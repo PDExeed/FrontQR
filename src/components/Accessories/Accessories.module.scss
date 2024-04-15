@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+.title {
+  font-family: "TacticSans-Med";
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 28.8px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: white;
+  padding: 4rem 0;
+  background: linear-gradient(90deg, #595E62 0%, #6F777E 100%);
+}
+.VX {
+  background: linear-gradient(360deg, #535A5C -0.12%, #262A2C 100%);
+}
+.RX{
+  background: linear-gradient(360deg, #907891 -0.12%, #3C2D39 100%);
+}
+.LX{
+  background: linear-gradient(360deg, #764755 -0.12%, #3C3437 100%);
+}

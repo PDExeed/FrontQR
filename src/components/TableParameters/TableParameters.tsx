@@ -1,8 +1,9 @@
 import s from './TableParameters.module.css'
 import {useSelector} from "react-redux";
 import {RootState} from "../../store/store";
+import carInformation from "../../store/carInformationSlice";
 export function TableParameters() {
-    const data = useSelector((s: RootState)=> s.car)
+    const data = useSelector((s: RootState)=> s.carInformation)
     return(
         <div className={s.table}>
             <table>
