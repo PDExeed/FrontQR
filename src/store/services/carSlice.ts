@@ -1,7 +1,10 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 import {CarItem} from "../carInformationSlice";
+import {CardInterface} from "../../components/Card/Card.interface";
 
-
+interface CarData {
+    data: CarItem
+}
 export const carAPI = createApi({
     reducerPath: 'carAPI',
     baseQuery: fetchBaseQuery({
@@ -9,7 +12,7 @@ export const carAPI = createApi({
     }),
     tagTypes: ['Car'],
     endpoints: (build) => ({
-        fetchCar: build.query<CarItem, string>({
+        fetchCar: build.query<CarData, string>({
             query: (vin) => ({
                 url: `/auto/car/${vin}`,
             }),

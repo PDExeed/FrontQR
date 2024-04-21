@@ -13,7 +13,7 @@ export function Cards() {
     return(
         <div>
             <div className={s.title}>{`${data.mark} ${data.model} это:`}</div>
-            <div style={{backgroundImage: 'url("car_icon.png")'}} className={s.border}>
+            <div className={s.border}>
                 {window.innerWidth <= 650 &&<Flickity className={s.slider} elementType='div' disableImagesLoaded={false} options={flickityOptions} reloadOnUpdate static>
                     {data.carts.map((el, ind)=><Card key={ind} title={el.title} content={el.text}></Card>)}
                 </Flickity>}

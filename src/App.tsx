@@ -19,8 +19,8 @@ function App() {
     const {data, isLoading, error} = carAPI.useFetchCarQuery(window.location.href.split('/')[3])
         useEffect(()=>{
             if(data) {
-                dispatch(cartActions.get(data.model))
-                dispatch(cartActions.setCar(data))
+                dispatch(cartActions.setCar(data.data))
+                dispatch(cartActions.get(data.data.model))
             }
             dispatch(cartActions.get(window.location.href.split('/')[3]))
             console.log(data)
