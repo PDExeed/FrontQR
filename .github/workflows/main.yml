@@ -30,7 +30,7 @@ jobs:
         if: github.event_name == 'push'
         uses: docker/build-push-action@v4
         with:
-          platforms: linux/amd64/v4
+          platforms: linux/amd64
           tags: ${{ secrets.DOCKER_USERNAME }}/server:latest
           push: true
 
