@@ -1,0 +1,10 @@
+client:
+  image: vpbuyanov/client:latest
+  container_name: client_frontend
+  ports:
+    - '3000:3000'
+  volumes:
+    - ./client:/app
+    - ./app/node_modules
+  stdin_open: true
+  tty: true
