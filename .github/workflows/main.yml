@@ -48,7 +48,7 @@ jobs:
           password: ${{ secrets.SERVER_PASS }}
           port: 22
           script: |
-            cd sky
+            cd pd
             
             docker stop client_frontend
             
