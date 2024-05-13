@@ -2,7 +2,6 @@ import s from "./BackgroundImage.module.css"
 import React from "react";
 import {useSelector} from "react-redux";
 import {RootState} from "../../store/store";
-import carInformation from "../../store/carInformationSlice";
 
 export function BackgroundImage() {
     const data = useSelector((s: RootState)=> s.carInformation)

@@ -25,13 +25,6 @@
   .descriptionContainer img {
     display: block;
   }
-  .hiden {
-    display: block;
-    width: 100%;
-  }
-  .container {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=App.module.css.map */

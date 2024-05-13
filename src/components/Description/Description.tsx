@@ -3,7 +3,6 @@ import {useSelector} from "react-redux";
 import {RootState} from "../../store/store";
 import cn from "classnames";
 import {DescriptionItem} from "../DescriptionItem/DescriptionItem";
-import carInformation from "../../store/carInformationSlice";
 
 const ICONS = ['car_icon.png', 'mark_icon.png', 'road_icon.png', 'wheel_icon.png']
 

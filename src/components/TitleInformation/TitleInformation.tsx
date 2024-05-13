@@ -6,7 +6,6 @@ import cn from "classnames"
 import carInformation from "../../store/carInformationSlice";
 export function TitleInformation(){
     const data = useSelector((s: RootState)=> s.carInformation)
-    console.log(data)
     return(
         <div className={s.background} style={{backgroundImage: `url("${data.image}")`}}>
             <div className={cn({
@@ -24,8 +23,8 @@ export function TitleInformation(){
             </div>
             <div className={s.parameters}>
                 <div className={s.parametersEl}>
-                    <Parameter title='Мощность' parameter={`${data.power} л. с.`} image={'thunder.png'}/>
-                    <Parameter title='Объем двигателя' parameter={`${data.engineCapacity} л`} image={'speedometer.png'}/>
+                    <Parameter title='Мощность' parameter={`${data.power}`} image={'thunder.png'}/>
+                    <Parameter title='Объем двигателя' parameter={`${data.engineCapacity}`} image={'speedometer.png'}/>
                 </div>
                 <div className={s.parametersEl}>
                     <Parameter title='Расход' parameter={`${data.expenditure} л`} image={'water-drop.png'}/>

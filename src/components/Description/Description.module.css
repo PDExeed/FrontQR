@@ -1,12 +1,14 @@
 .container {
+  box-sizing: border-box;
+  width: 100%;
   color: white;
   font-size: 2.4rem;
   font-weight: 400;
   text-align: center;
-  padding: 3.5rem 13rem;
   background: linear-gradient(360deg, #5A5963 -0.12%, #3A393F 100%);
   display: flex;
   justify-content: center;
+  padding: 5vw;
 }
 
 .items {
@@ -29,18 +31,6 @@
 
 .RX {
   background: linear-gradient(360deg, #907891 -0.12%, #3C2D39 100%);
-}
-
-@media (min-width: 510px) {
-  .container {
-    padding: 3rem;
-    font-size: 2.3rem;
-  }
-}
-@media (max-width: 500px) {
-  .container {
-    padding: 3rem;
-  }
 }
 
 /*# sourceMappingURL=Description.module.css.map */

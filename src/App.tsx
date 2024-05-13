@@ -19,11 +19,14 @@ function App() {
     const {data, isLoading, error} = carAPI.useFetchCarQuery(window.location.href.split('/')[3])
         useEffect(()=>{
             if(data) {
-                dispatch(cartActions.setCar(data.data))
+                let packageItems: string[] = [];
+                if (data.data.package) {
+                    packageItems = data.data.package.split(", ");
+                    console.log(packageItems)
+                }
                 dispatch(cartActions.get(data.data.model))
+                dispatch(cartActions.setCar({ ...data.data, engineCapacity: packageItems[0], power: packageItems[1], drive: packageItems[2]}));
             }
-            dispatch(cartActions.get(window.location.href.split('/')[3]))
-            console.log(data)
     }, [data, isLoading])
   return (
     <div>
@@ -31,13 +34,8 @@ function App() {
         <TitleInformation/>
         <div className={s.descriptionContainer}>
             <TableParameters/>
-            <div className={s.hiden}>
-                <BackgroundImage/>
-            </div>
-            <Description/>
-        </div>
-        <div className={s.container}>
             <BackgroundImage/>
+            <Description/>
         </div>
         <Cards/>
         <Price price={6700000}/>

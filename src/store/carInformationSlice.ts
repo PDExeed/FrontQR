@@ -18,9 +18,9 @@ export interface CarItem {
     finishing: string
     transmission: string
     drive: string
-    expenditure: number
-    engineCapacity: number
-    power: number
+    expenditure: string
+    engineCapacity: string
+    power: string
     title: string
     description: string[]
     carts: { title: string, text: string }[],
@@ -45,9 +45,9 @@ const initialState: CarItem = {
     finishing: '',
     transmission: '',
     drive: '',
-    expenditure: 0,
-    engineCapacity: 0,
-    power: 0,
+    expenditure: '',
+    engineCapacity: '',
+    power: '',
     title: '',
     description: [''],
     carts: [{ title: '', text: '' }],
