@@ -8,11 +8,7 @@ interface CarData {
 export const carAPI = createApi({
     reducerPath: 'carAPI',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://exeed-mospolytech.ru:8000',
-        prepareHeaders: (headers, { getState }) => {
-            headers.set('Host', `exeed-mospolytech.ru:8000`);
-            return headers;
-        },
+        baseUrl: 'http://92.53.70.162:8000',
     }),
     tagTypes: ['Car'],
     endpoints: (build) => ({
