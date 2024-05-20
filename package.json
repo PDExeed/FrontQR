@@ -2,7 +2,7 @@
   "name": "frontqr",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://92.53.70.162:8000",
+  "proxy": "https://exeed-mospolytech.ru",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.2",
     "@testing-library/jest-dom": "^5.17.0",
