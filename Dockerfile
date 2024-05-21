@@ -1,19 +1,29 @@
-FROM node:18-alpine
+# Указываем базовый образ
+FROM node:14-alpine
 
+# Устанавливаем рабочую директорию
 WORKDIR /app
 
-COPY package.json .
+# Копируем package.json и package-lock.json
+COPY package*.json ./
 
+# Устанавливаем зависимости
 RUN npm install
 
+# Копируем остальной исходный код
 COPY . .
 
-CMD ["npm", "build"]
+# Сборка приложения
+RUN npm run build
 
-FROM nginx:1.16.0-alpine
+# Указываем базовый образ для сервера
+FROM nginx:alpine
 
-COPY default.conf /etc/nginx/conf.d/default.conf
-COPY --from=builder /app/build /usr/share/nginx/html
+# Копируем собранное приложение в nginx директорию
+COPY --from=0 /app/build /usr/share/nginx/html
 
+# Открываем порт
 EXPOSE 80
+
+# Запускаем nginx
 CMD ["nginx", "-g", "daemon off;"]
